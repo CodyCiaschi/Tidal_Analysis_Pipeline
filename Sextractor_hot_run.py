@@ -33,7 +33,7 @@ def run_sex(image, output_catalog, mag_zero, seeing_fwhm, sex_config='hot_run.se
     proj_cwd = os.getcwd()
 
     # Define locations of files in absolute paths.
-    se_executable = '/opt/local/bin/sex'
+    se_executable = '/Applications/Ureka/bin/sex'
     sex_config = os.path.abspath(sex_config)
     param_file = os.path.abspath(param_file)
     image = os.path.abspath(image)
@@ -61,3 +61,5 @@ def run_sex(image, output_catalog, mag_zero, seeing_fwhm, sex_config='hot_run.se
 
     # Return to the project directory
     os.chdir(proj_cwd)
+
+run_sex('~/Documents/CANDELS/GDS/massive_bright_gds_test/H.gf10650.fits','H.gf10650.cat', 25.9463,0.18)
